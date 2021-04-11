@@ -1,0 +1,1659 @@
+Trying qsub
+Date: 2021-04-10 00:56:35.993998
+Host: qb3-id45
+Python: /wynton/home/rotation/kevinnie/proteindesign/project/python
+Command: JOB_ID=3047106 SGE_TASK_ID=5 /wynton/home/rotation/kevinnie/proteindesign/project/01_designs/run.py /wynton/home/rotation/kevinnie/proteindesign/project/01_designs
+
+core.init: {0} Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: {0} Rosetta version: PyRosetta4.conda.linux.cxx11thread.serialization.CentOS.python37.Release r278 2021.13+release.b0f375c b0f375c4dc0c8a7f8cc8e2ac6fa3b71fcdcc2402 http://www.pyrosetta.org 2021-04-02T16:15:01
+core.init: {0} command: PyRosetta -ex1 -ex2aro -database /wynton/home/rotation/kevinnie/anaconda3/envs/proteindesign/lib/python3.7/site-packages/pyrosetta/database
+basic.random.init_random_generator: {0} 'RNG device' seed mode, using '/dev/urandom', seed=-879896503 seed_offset=0 real_seed=-879896503 thread_index=0
+basic.random.init_random_generator: {0} RandomGenerator:init: Normal mode, seed=-879896503 RG_type=mt19937
+core.chemical.GlobalResidueTypeSet: {0} Finished initializing fa_standard residue type set.  Created 984 residue types
+core.chemical.GlobalResidueTypeSet: {0} Total time to initialize 1.84 seconds.
+core.import_pose.import_pose: {0} File '/wynton/home/rotation/kevinnie/proteindesign/project/input.pdb.gz' automatically determined to be of type PDB
+core.conformation.Conformation: {0} [ WARNING ] missing heavyatom:  OXT on residue ARG:CtermProteinFull 748
+core.conformation.Conformation: {0} [ WARNING ] missing heavyatom:  OXT on residue LEU:CtermProteinFull 931
+core.conformation.Conformation: {0} Found disulfide between residues 324 341
+core.conformation.Conformation: {0} current variant for 324 CYS
+core.conformation.Conformation: {0} current variant for 341 CYS
+core.conformation.Conformation: {0} current variant for 324 CYD
+core.conformation.Conformation: {0} current variant for 341 CYD
+core.conformation.Conformation: {0} Found disulfide between residues 510 522
+core.conformation.Conformation: {0} current variant for 510 CYS
+core.conformation.Conformation: {0} current variant for 522 CYS
+core.conformation.Conformation: {0} current variant for 510 CYD
+core.conformation.Conformation: {0} current variant for 522 CYD
+core.conformation.Conformation: {0} Found disulfide between residues 792 845
+core.conformation.Conformation: {0} current variant for 792 CYS
+core.conformation.Conformation: {0} current variant for 845 CYS
+core.conformation.Conformation: {0} current variant for 792 CYD
+core.conformation.Conformation: {0} current variant for 845 CYD
+core.conformation.Conformation: {0} Found disulfide between residues 893 901
+core.conformation.Conformation: {0} current variant for 893 CYS
+core.conformation.Conformation: {0} current variant for 901 CYS
+core.conformation.Conformation: {0} current variant for 893 CYD
+core.conformation.Conformation: {0} current variant for 901 CYD
+core.scoring.etable: {0} Starting energy table calculation
+core.scoring.etable: {0} smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: {0} smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: {0} smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: {0} Finished calculating energy tables.
+basic.io.database: {0} Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: {0} Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: {0} Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: {0} Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: {0} Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+basic.io.database: {0} Database file opened: scoring/score_functions/rama/fd/all.ramaProb
+basic.io.database: {0} Database file opened: scoring/score_functions/rama/fd/prepro.ramaProb
+basic.io.database: {0} Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: {0} Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: {0} Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: {0} Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+basic.io.database: {0} Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: {0} Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: {0} shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: {0} Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+protocols.relax.RelaxScriptManager: {0} Reading relax scripts list from database.
+protocols.relax.RelaxScriptManager: {0} Looking for MonomerRelax2019.txt
+protocols.relax.RelaxScriptManager: {0} ================== Reading script file: /wynton/home/rotation/kevinnie/anaconda3/envs/proteindesign/lib/python3.7/site-packages/pyrosetta/database/sampling/relax_scripts/MonomerRelax2019.txt ==================
+protocols.relax.RelaxScriptManager: {0} repeat %%nrepeats%%
+protocols.relax.RelaxScriptManager: {0} coord_cst_weight 1.0
+protocols.relax.RelaxScriptManager: {0} scale:fa_rep 0.040
+protocols.relax.RelaxScriptManager: {0} repack
+protocols.relax.RelaxScriptManager: {0} scale:fa_rep 0.051
+protocols.relax.RelaxScriptManager: {0} min 0.01
+protocols.relax.RelaxScriptManager: {0} coord_cst_weight 0.5
+protocols.relax.RelaxScriptManager: {0} scale:fa_rep 0.265
+protocols.relax.RelaxScriptManager: {0} repack
+protocols.relax.RelaxScriptManager: {0} scale:fa_rep 0.280
+protocols.relax.RelaxScriptManager: {0} min 0.01
+protocols.relax.RelaxScriptManager: {0} coord_cst_weight 0.0
+protocols.relax.RelaxScriptManager: {0} scale:fa_rep 0.559
+protocols.relax.RelaxScriptManager: {0} repack
+protocols.relax.RelaxScriptManager: {0} scale:fa_rep 0.581
+protocols.relax.RelaxScriptManager: {0} min 0.01
+protocols.relax.RelaxScriptManager: {0} coord_cst_weight 0.0
+protocols.relax.RelaxScriptManager: {0} scale:fa_rep 1
+protocols.relax.RelaxScriptManager: {0} repack
+protocols.relax.RelaxScriptManager: {0} min 0.00001
+protocols.relax.RelaxScriptManager: {0} accept_to_best
+protocols.relax.RelaxScriptManager: {0} endrepeat
+core.init: {0} Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: {0} Rosetta version: PyRosetta4.conda.linux.cxx11thread.serialization.CentOS.python37.Release r278 2021.13+release.b0f375c b0f375c4dc0c8a7f8cc8e2ac6fa3b71fcdcc2402 http://www.pyrosetta.org 2021-04-02T16:15:01
+core.init: {0} command: PyRosetta -ex1 -ex2 -use_input_sc -ex1aro -database /wynton/home/rotation/kevinnie/anaconda3/envs/proteindesign/lib/python3.7/site-packages/pyrosetta/database
+basic.random.init_random_generator: {0} 'RNG device' seed mode, using '/dev/urandom', seed=279082458 seed_offset=0 real_seed=279082458 thread_index=0
+basic.random.init_random_generator: {0} RandomGenerator:init: Normal mode, seed=279082458 RG_type=mt19937
+protocols.denovo_design.movers.FastDesign: {0} #Packer_Task
+protocols.denovo_design.movers.FastDesign: {0} 
+protocols.denovo_design.movers.FastDesign: {0} Threads to request: ALL AVAILABLE
+protocols.denovo_design.movers.FastDesign: {0} 
+protocols.denovo_design.movers.FastDesign: {0} resid	pack?	design?	allowed_aas
+protocols.denovo_design.movers.FastDesign: {0} 1	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 2	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 3	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 4	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 5	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 6	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 7	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 8	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 9	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 10	TRUE	FALSE	ASP
+protocols.denovo_design.movers.FastDesign: {0} 11	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 12	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 13	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 14	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 15	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 16	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 17	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 18	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 19	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 20	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 21	TRUE	FALSE	TYR
+protocols.denovo_design.movers.FastDesign: {0} 22	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 23	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 24	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 25	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 26	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 27	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 28	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 29	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 30	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 31	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 32	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 33	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 34	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 35	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 36	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 37	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 38	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 39	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 40	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 41	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 42	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 43	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 44	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 45	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 46	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 47	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 48	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 49	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 50	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 51	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 52	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 53	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 54	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 55	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 56	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 57	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 58	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 59	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 60	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 61	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 62	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 63	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 64	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 65	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 66	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 67	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 68	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 69	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 70	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 71	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 72	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 73	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 74	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 75	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 76	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 77	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 78	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 79	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 80	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 81	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 82	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 83	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 84	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 85	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 86	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 87	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 88	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 89	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 90	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 91	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 92	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 93	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 94	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 95	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 96	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 97	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 98	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 99	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 100	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 101	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 102	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 103	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 104	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 105	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 106	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 107	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 108	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 109	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 110	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 111	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 112	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 113	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 114	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 115	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 116	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 117	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 118	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 119	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 120	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 121	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 122	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 123	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 124	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 125	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 126	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 127	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 128	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 129	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 130	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 131	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 132	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 133	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 134	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 135	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 136	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 137	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 138	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 139	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 140	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 141	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 142	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 143	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 144	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 145	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 146	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 147	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 148	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 149	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 150	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 151	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 152	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 153	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 154	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 155	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 156	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 157	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 158	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 159	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 160	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 161	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 162	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 163	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 164	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 165	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 166	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 167	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 168	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 169	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 170	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 171	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 172	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 173	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 174	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 175	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 176	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 177	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 178	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 179	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 180	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 181	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 182	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 183	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 184	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 185	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 186	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 187	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 188	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 189	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 190	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 191	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 192	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 193	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 194	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 195	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 196	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 197	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 198	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 199	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 200	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 201	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 202	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 203	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 204	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 205	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 206	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 207	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 208	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 209	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 210	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 211	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 212	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 213	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 214	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 215	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 216	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 217	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 218	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 219	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 220	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 221	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 222	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 223	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 224	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 225	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 226	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 227	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 228	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 229	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 230	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 231	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 232	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 233	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 234	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 235	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 236	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 237	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 238	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 239	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 240	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 241	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 242	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 243	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 244	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 245	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 246	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 247	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 248	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 249	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 250	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 251	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 252	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 253	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 254	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 255	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 256	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 257	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 258	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 259	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 260	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 261	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 262	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 263	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 264	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 265	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 266	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 267	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 268	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 269	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 270	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 271	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 272	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 273	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 274	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 275	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 276	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 277	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 278	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 279	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 280	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 281	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 282	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 283	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 284	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 285	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 286	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 287	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 288	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 289	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 290	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 291	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 292	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 293	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 294	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 295	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 296	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 297	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 298	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 299	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 300	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 301	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 302	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 303	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 304	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 305	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 306	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 307	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 308	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 309	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 310	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 311	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 312	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 313	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 314	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 315	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 316	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 317	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 318	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 319	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 320	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 321	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 322	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 323	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 324	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 325	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 326	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 327	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 328	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 329	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 330	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 331	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 332	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 333	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 334	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 335	TRUE	FALSE	ASP
+protocols.denovo_design.movers.FastDesign: {0} 336	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 337	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 338	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 339	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 340	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 341	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 342	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 343	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 344	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 345	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 346	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 347	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 348	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 349	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 350	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 351	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 352	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 353	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 354	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 355	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 356	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 357	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 358	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 359	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 360	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 361	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 362	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 363	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 364	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 365	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 366	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 367	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 368	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 369	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 370	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 371	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 372	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 373	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 374	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 375	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 376	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 377	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 378	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 379	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 380	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 381	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 382	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 383	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 384	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 385	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 386	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 387	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 388	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 389	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 390	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 391	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 392	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 393	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 394	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 395	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 396	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 397	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 398	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 399	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 400	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 401	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 402	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 403	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 404	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 405	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 406	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 407	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 408	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 409	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 410	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 411	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 412	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 413	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 414	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 415	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 416	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 417	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 418	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 419	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 420	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 421	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 422	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 423	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 424	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 425	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 426	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 427	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 428	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 429	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 430	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 431	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 432	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 433	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 434	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 435	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 436	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 437	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 438	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 439	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 440	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 441	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 442	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 443	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 444	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 445	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 446	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 447	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 448	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 449	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 450	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 451	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 452	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 453	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 454	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 455	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 456	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 457	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 458	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 459	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 460	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 461	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 462	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 463	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 464	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 465	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 466	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 467	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 468	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 469	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 470	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 471	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 472	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 473	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 474	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 475	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 476	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 477	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 478	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 479	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 480	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 481	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 482	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 483	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 484	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 485	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 486	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 487	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 488	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 489	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 490	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 491	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 492	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 493	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 494	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 495	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 496	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 497	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 498	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 499	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 500	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 501	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 502	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 503	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 504	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 505	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 506	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 507	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 508	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 509	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 510	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 511	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 512	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 513	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 514	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 515	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 516	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 517	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 518	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 519	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 520	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 521	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 522	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 523	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 524	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 525	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 526	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 527	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 528	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 529	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 530	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 531	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 532	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 533	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 534	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 535	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 536	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 537	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 538	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 539	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 540	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 541	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 542	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 543	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 544	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 545	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 546	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 547	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 548	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 549	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 550	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 551	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 552	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 553	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 554	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 555	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 556	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 557	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 558	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 559	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 560	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 561	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 562	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 563	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 564	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 565	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 566	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 567	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 568	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 569	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 570	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 571	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 572	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 573	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 574	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 575	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 576	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 577	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 578	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 579	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 580	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 581	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 582	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 583	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 584	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 585	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 586	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 587	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 588	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 589	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 590	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 591	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 592	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 593	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 594	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 595	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 596	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 597	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 598	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 599	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 600	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 601	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 602	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 603	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 604	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 605	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 606	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 607	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 608	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 609	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 610	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 611	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 612	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 613	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 614	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 615	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 616	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 617	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 618	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 619	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 620	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 621	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 622	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 623	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 624	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 625	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 626	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 627	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 628	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 629	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 630	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 631	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 632	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 633	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 634	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 635	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 636	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 637	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 638	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 639	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 640	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 641	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 642	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 643	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 644	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 645	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 646	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 647	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 648	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 649	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 650	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 651	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 652	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 653	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 654	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 655	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 656	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 657	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 658	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 659	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 660	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 661	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 662	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 663	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 664	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 665	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 666	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 667	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 668	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 669	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 670	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 671	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 672	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 673	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 674	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 675	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 676	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 677	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 678	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 679	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 680	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 681	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 682	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 683	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 684	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 685	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 686	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 687	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 688	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 689	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 690	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 691	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 692	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 693	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 694	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 695	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 696	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 697	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 698	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 699	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 700	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 701	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 702	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 703	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 704	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 705	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 706	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 707	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 708	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 709	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 710	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 711	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 712	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 713	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 714	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 715	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 716	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 717	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 718	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 719	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 720	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 721	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 722	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 723	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 724	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 725	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 726	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 727	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 728	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 729	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 730	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 731	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 732	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 733	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 734	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 735	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 736	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 737	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 738	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 739	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 740	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 741	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 742	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 743	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 744	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 745	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 746	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 747	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 748	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 749	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 750	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 751	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 752	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 753	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 754	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 755	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 756	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 757	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 758	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 759	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 760	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 761	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 762	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 763	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 764	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 765	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 766	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 767	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 768	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 769	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 770	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 771	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 772	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 773	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 774	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 775	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 776	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 777	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 778	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 779	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 780	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 781	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 782	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 783	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 784	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 785	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 786	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 787	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 788	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 789	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 790	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 791	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 792	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 793	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 794	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 795	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 796	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 797	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 798	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 799	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 800	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 801	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 802	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 803	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 804	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 805	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 806	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 807	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 808	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 809	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 810	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 811	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 812	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 813	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 814	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 815	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 816	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 817	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 818	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 819	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 820	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 821	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 822	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 823	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 824	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 825	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 826	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 827	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 828	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 829	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 830	TRUE	FALSE	LYS
+protocols.denovo_design.movers.FastDesign: {0} 831	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 832	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 833	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 834	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 835	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 836	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 837	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 838	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 839	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 840	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 841	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 842	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 843	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 844	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 845	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 846	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 847	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 848	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 849	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 850	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 851	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 852	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 853	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 854	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 855	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 856	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 857	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 858	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 859	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 860	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 861	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 862	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 863	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 864	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 865	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 866	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 867	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 868	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 869	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 870	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 871	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 872	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 873	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 874	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 875	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 876	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 877	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 878	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 879	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 880	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 881	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 882	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 883	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 884	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 885	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 886	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 887	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 888	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 889	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 890	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 891	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 892	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 893	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 894	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 895	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 896	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 897	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 898	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 899	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 900	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 901	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 902	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 903	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 904	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 905	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 906	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 907	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 908	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 909	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 910	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 911	TRUE	FALSE	GLN
+protocols.denovo_design.movers.FastDesign: {0} 912	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 913	TRUE	FALSE	THR
+protocols.denovo_design.movers.FastDesign: {0} 914	TRUE	TRUE	ALA,CYS,ASP,GLU,PHE,GLY,HIS,HIS_D,ILE,LYS,LEU,MET,ASN,PRO,GLN,ARG,SER,THR,VAL,TRP,TYR
+protocols.denovo_design.movers.FastDesign: {0} 915	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 916	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 917	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 918	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 919	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 920	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 921	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 922	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 923	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 924	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 925	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 926	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 927	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 928	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 929	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 930	FALSE	FALSE	
+protocols.denovo_design.movers.FastDesign: {0} 931	FALSE	FALSE	
+basic.io.database: {0} Database file opened: scoring/score_functions/elec_cp_reps.dat
+core.scoring.elec.util: {0} Read 40 countpair representative atoms
+core.pack.dunbrack.RotamerLibrary: {0} shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: {0} shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: {0} Binary rotamer library selected: /wynton/home/rotation/kevinnie/anaconda3/envs/proteindesign/lib/python3.7/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: {0} Using Dunbrack library binary file '/wynton/home/rotation/kevinnie/anaconda3/envs/proteindesign/lib/python3.7/site-packages/pyrosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: {0} Dunbrack 2010 library took 0.29 seconds to load from binary
+protocols.relax.FastRelax: {0} CMD: repeat  3507.17  0  0  0.55
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  3507.17  0  0  0.55
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  1656.35  0  0  0.022
+core.pack.pack_rotamers: {0} built 394 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+basic.thread_manager.RosettaThreadManager: {?} Creating a thread pool of 1 threads.
+basic.thread_manager.RosettaThreadPool: {?} Launched 0 new threads.
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  1616.02  0  0  0.022
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  1637.27  0  0  0.02805
+core.optimization.Minimizer: {0} [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: {0} CMD: min  -3126.27  9.74629  9.74629  0.02805
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -3126.27  9.74629  9.74629  0.02805
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1174.84  9.74629  9.74629  0.14575
+core.pack.pack_rotamers: {0} built 204 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -1174.89  9.74629  9.74629  0.14575
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1038.11  9.74629  9.74629  0.154
+core.optimization.Minimizer: {0} [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: {0} CMD: min  -2512.04  9.16994  9.16994  0.154
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -2512.04  9.16994  9.16994  0.154
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2005.83  9.16994  9.16994  0.30745
+core.pack.pack_rotamers: {0} built 187 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -2005.83  9.16994  9.16994  0.30745
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1965.91  9.16994  9.16994  0.31955
+core.optimization.Minimizer: {0} [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: {0} CMD: min  -2180.37  8.70672  8.70672  0.31955
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -2180.37  8.70672  8.70672  0.31955
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1764.24  8.70672  8.70672  0.55
+core.pack.pack_rotamers: {0} built 193 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -1764.24  8.70672  8.70672  0.55
+protocols.relax.FastRelax: {0} CMD: min  -1882.92  8.31794  8.31794  0.55
+protocols.relax.FastRelax: {0} MRP: 0  -1882.92  -1882.92  8.31794  8.31794  
+protocols.relax.FastRelax: {0} CMD: accept_to_best  -1882.92  8.31794  8.31794  0.55
+protocols.relax.FastRelax: {0} CMD: endrepeat  -1882.92  8.31794  8.31794  0.55
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -1882.92  8.31794  8.31794  0.55
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2507.03  8.31794  8.31794  0.022
+core.pack.pack_rotamers: {0} built 396 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -2507.51  8.31794  8.31794  0.022
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2500.3  8.31794  8.31794  0.02805
+core.optimization.Minimizer: {0} [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: {0} CMD: min  -3428.39  9.80178  9.80178  0.02805
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -3428.39  9.80178  9.80178  0.02805
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1498.64  9.80178  9.80178  0.14575
+core.pack.pack_rotamers: {0} built 173 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -1498.67  9.80178  9.80178  0.14575
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1363.9  9.80178  9.80178  0.154
+protocols.relax.FastRelax: {0} CMD: min  -2634.71  9.55293  9.55293  0.154
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -2634.71  9.55293  9.55293  0.154
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2117.78  9.55293  9.55293  0.30745
+core.pack.pack_rotamers: {0} built 177 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -2117.78  9.55293  9.55293  0.30745
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2077.02  9.55293  9.55293  0.31955
+protocols.relax.FastRelax: {0} CMD: min  -2238.61  9.3404  9.3404  0.31955
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -2238.61  9.3404  9.3404  0.31955
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1812.29  9.3404  9.3404  0.55
+core.pack.pack_rotamers: {0} built 151 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -1812.29  9.3404  9.3404  0.55
+protocols.relax.FastRelax: {0} CMD: min  -1923.07  9.12447  9.12447  0.55
+protocols.relax.FastRelax: {0} MRP: 1  -1923.07  -1923.07  9.12447  9.12447  
+protocols.relax.FastRelax: {0} CMD: accept_to_best  -1923.07  9.12447  9.12447  0.55
+protocols.relax.FastRelax: {0} CMD: endrepeat  -1923.07  9.12447  9.12447  0.55
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -1923.07  9.12447  9.12447  0.55
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2554.6  9.12447  9.12447  0.022
+core.pack.pack_rotamers: {0} built 354 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -2560.18  9.12447  9.12447  0.022
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2552.53  9.12447  9.12447  0.02805
+core.optimization.Minimizer: {0} [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: {0} CMD: min  -3463.26  10.2312  10.2312  0.02805
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -3463.26  10.2312  10.2312  0.02805
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1542.66  10.2312  10.2312  0.14575
+core.pack.pack_rotamers: {0} built 190 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -1542.86  10.2312  10.2312  0.14575
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1408.26  10.2312  10.2312  0.154
+protocols.relax.FastRelax: {0} CMD: min  -2657.75  9.61224  9.61224  0.154
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -2657.75  9.61224  9.61224  0.154
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2134.83  9.61224  9.61224  0.30745
+core.pack.pack_rotamers: {0} built 189 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -2134.83  9.61224  9.61224  0.30745
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2093.6  9.61224  9.61224  0.31955
+protocols.relax.FastRelax: {0} CMD: min  -2261.39  9.34073  9.34073  0.31955
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -2261.39  9.34073  9.34073  0.31955
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1833.14  9.34073  9.34073  0.55
+core.pack.pack_rotamers: {0} built 181 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -1833.14  9.34073  9.34073  0.55
+protocols.relax.FastRelax: {0} CMD: min  -1920.15  9.15012  9.15012  0.55
+protocols.relax.FastRelax: {0} MRP: 2  -1920.15  -1923.07  9.12447  9.12447  
+protocols.relax.FastRelax: {0} CMD: accept_to_best  -1920.15  9.15012  9.15012  0.55
+protocols.relax.FastRelax: {0} CMD: endrepeat  -1920.15  9.15012  9.15012  0.55
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -1920.15  9.15012  9.15012  0.55
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2579.37  9.15012  9.15012  0.022
+core.pack.pack_rotamers: {0} built 389 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -2579.47  9.15012  9.15012  0.022
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2571.91  9.15012  9.15012  0.02805
+core.optimization.Minimizer: {0} [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: {0} CMD: min  -3477.77  10.2264  10.2264  0.02805
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -3477.77  10.2264  10.2264  0.02805
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1551.97  10.2264  10.2264  0.14575
+core.pack.pack_rotamers: {0} built 183 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -1552.03  10.2264  10.2264  0.14575
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1417.05  10.2264  10.2264  0.154
+protocols.relax.FastRelax: {0} CMD: min  -2671.26  9.64362  9.64362  0.154
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -2671.26  9.64362  9.64362  0.154
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2148.19  9.64362  9.64362  0.30745
+core.pack.pack_rotamers: {0} built 187 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -2148.19  9.64362  9.64362  0.30745
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2106.94  9.64362  9.64362  0.31955
+protocols.relax.FastRelax: {0} CMD: min  -2262.7  9.38129  9.38129  0.31955
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -2262.7  9.38129  9.38129  0.31955
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1827.87  9.38129  9.38129  0.55
+core.pack.pack_rotamers: {0} built 184 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -1827.87  9.38129  9.38129  0.55
+protocols.relax.FastRelax: {0} CMD: min  -1936.08  9.2526  9.2526  0.55
+protocols.relax.FastRelax: {0} MRP: 3  -1936.08  -1936.08  9.2526  9.2526  
+protocols.relax.FastRelax: {0} CMD: accept_to_best  -1936.08  9.2526  9.2526  0.55
+protocols.relax.FastRelax: {0} CMD: endrepeat  -1936.08  9.2526  9.2526  0.55
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -1936.08  9.2526  9.2526  0.55
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2581.55  9.2526  9.2526  0.022
+core.pack.pack_rotamers: {0} built 395 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -2581.67  9.2526  9.2526  0.022
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2574.27  9.2526  9.2526  0.02805
+core.optimization.Minimizer: {0} [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: {0} CMD: min  -3483.51  10.2334  10.2334  0.02805
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -3483.51  10.2334  10.2334  0.02805
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1581.96  10.2334  10.2334  0.14575
+core.pack.pack_rotamers: {0} built 182 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -1582.08  10.2334  10.2334  0.14575
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1448.81  10.2334  10.2334  0.154
+protocols.relax.FastRelax: {0} CMD: min  -2673.83  9.66769  9.66769  0.154
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -2673.83  9.66769  9.66769  0.154
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2150.22  9.66769  9.66769  0.30745
+core.pack.pack_rotamers: {0} built 187 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -2150.22  9.66769  9.66769  0.30745
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -2108.93  9.66769  9.66769  0.31955
+protocols.relax.FastRelax: {0} CMD: min  -2271.42  9.45528  9.45528  0.31955
+protocols.relax.FastRelax: {0} CMD: coord_cst_weight  -2271.42  9.45528  9.45528  0.31955
+protocols.relax.FastRelax: {0} CMD: scale:fa_rep  -1841.78  9.45528  9.45528  0.55
+core.pack.pack_rotamers: {0} built 185 rotamers at 7 positions.
+core.pack.pack_rotamers: {0} Requesting all available threads for interaction graph computation.
+core.pack.interaction_graph.interaction_graph_factory: {0} Instantiating PDInteractionGraph
+core.pack.rotamer_set.RotamerSets: {0} Completed interaction graph pre-calculation in 1 available threads (1 had been requested).
+protocols.relax.FastRelax: {0} CMD: repack  -1841.78  9.45528  9.45528  0.55
+protocols.relax.FastRelax: {0} CMD: min  -1942.91  9.28388  9.28388  0.55
+protocols.relax.FastRelax: {0} MRP: 4  -1942.91  -1942.91  9.28388  9.28388  
+protocols.relax.FastRelax: {0} CMD: accept_to_best  -1942.91  9.28388  9.28388  0.55
+protocols.relax.FastRelax: {0} CMD: endrepeat  -1942.91  9.28388  9.28388  0.55
+protocols::checkpoint: {0} Deleting checkpoints of FastRelax
+protocols.denovo_design.movers.FastDesign: {0} 
+------------------------------------------------------------
+ Scores                       Weight   Raw Score Wghtd.Score
+------------------------------------------------------------
+ fa_atr                       1.000   -5721.887   -5721.887
+ fa_rep                       0.550    1215.337     668.435
+ fa_sol                       1.000    3424.075    3424.075
+ fa_intra_rep                 0.005    2614.407      13.072
+ fa_intra_sol_xover4          1.000     229.008     229.008
+ lk_ball_wtd                  1.000    -174.631    -174.631
+ fa_elec                      1.000   -1438.030   -1438.030
+ pro_close                    1.250       4.358       5.447
+ hbond_sr_bb                  1.000    -406.286    -406.286
+ hbond_lr_bb                  1.000    -113.837    -113.837
+ hbond_bb_sc                  1.000    -152.627    -152.627
+ hbond_sc                     1.000    -121.181    -121.181
+ dslf_fa13                    1.250      -2.069      -2.587
+ omega                        0.400     314.509     125.803
+ fa_dun                       0.700    2174.409    1522.086
+ p_aa_pp                      0.600    -269.468    -161.681
+ yhh_planarity                0.625       5.457       3.411
+ ref                          1.000     264.868     264.868
+ rama_prepro                  0.450     208.071      93.632
+---------------------------------------------------
+ Total weighted score:                    -1942.908
+core.import_pose.import_pose: {0} File '/wynton/home/rotation/kevinnie/proteindesign/project/input.pdb.gz' automatically determined to be of type PDB
+core.conformation.Conformation: {0} [ WARNING ] missing heavyatom:  OXT on residue ARG:CtermProteinFull 748
+core.conformation.Conformation: {0} [ WARNING ] missing heavyatom:  OXT on residue LEU:CtermProteinFull 931
+core.conformation.Conformation: {0} Found disulfide between residues 324 341
+core.conformation.Conformation: {0} current variant for 324 CYS
+core.conformation.Conformation: {0} current variant for 341 CYS
+core.conformation.Conformation: {0} current variant for 324 CYD
+core.conformation.Conformation: {0} current variant for 341 CYD
+core.conformation.Conformation: {0} Found disulfide between residues 510 522
+core.conformation.Conformation: {0} current variant for 510 CYS
+core.conformation.Conformation: {0} current variant for 522 CYS
+core.conformation.Conformation: {0} current variant for 510 CYD
+core.conformation.Conformation: {0} current variant for 522 CYD
+core.conformation.Conformation: {0} Found disulfide between residues 792 845
+core.conformation.Conformation: {0} current variant for 792 CYS
+core.conformation.Conformation: {0} current variant for 845 CYS
+core.conformation.Conformation: {0} current variant for 792 CYD
+core.conformation.Conformation: {0} current variant for 845 CYD
+core.conformation.Conformation: {0} Found disulfide between residues 893 901
+core.conformation.Conformation: {0} current variant for 893 CYS
+core.conformation.Conformation: {0} current variant for 901 CYS
+core.conformation.Conformation: {0} current variant for 893 CYD
+core.conformation.Conformation: {0} current variant for 901 CYD
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Generating XML Schema for rosetta_scripts...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Initializing schema validator...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Validating input script...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Parsed script:
+<ROSETTASCRIPTS>
+	<FILTERS>
+		<BuriedUnsatHbonds confidence="0" cutoff="4" ignore_surface_res="true" name="Buried Unsat [[-]]" print_out_info_to_pdb="true" report_all_heavy_atom_unsats="true" residue_surface_cutoff="20.0" scorefxn="ref2015"/>
+	</FILTERS>
+	<PROTOCOLS/>
+</ROSETTASCRIPTS>
+core.scoring.ScoreFunctionFactory: {0} SCOREFUNCTION: ref2015
+core.scoring.etable: {0} Starting energy table calculation
+core.scoring.etable: {0} smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: {0} smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: {0} smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: {0} Finished calculating energy tables.
+basic.io.database: {0} Database file opened: scoring/score_functions/PairEPotential/pdb_pair_stats_fine
+basic.io.database: {0} Database file opened: scoring/score_functions/InterchainPotential/interchain_env_log.txt
+basic.io.database: {0} Database file opened: scoring/score_functions/InterchainPotential/interchain_pair_log.txt
+basic.io.database: {0} Database file opened: scoring/score_functions/EnvPairPotential/env_log.txt
+basic.io.database: {0} Database file opened: scoring/score_functions/EnvPairPotential/cbeta_den.txt
+basic.io.database: {0} Database file opened: scoring/score_functions/EnvPairPotential/pair_log.txt
+basic.io.database: {0} Database file opened: scoring/score_functions/EnvPairPotential/cenpack_log.txt
+core.scoring.ramachandran: {0} shapovalov_lib::shap_rama_smooth_level of 4( aka highest_smooth ) got activated.
+basic.io.database: {0} Database file opened: scoring/score_functions/rama/shapovalov/kappa25/all.ramaProb
+basic.io.database: {0} Database file opened: scoring/score_functions/rama/flat/avg_L_rama.dat
+core.scoring.ramachandran: {0} Reading custom Ramachandran table from scoring/score_functions/rama/flat/avg_L_rama.dat.
+basic.io.database: {0} Database file opened: scoring/score_functions/rama/flat/sym_all_rama.dat
+core.scoring.ramachandran: {0} Reading custom Ramachandran table from scoring/score_functions/rama/flat/sym_all_rama.dat.
+basic.io.database: {0} Database file opened: scoring/score_functions/rama/flat/sym_G_rama.dat
+core.scoring.ramachandran: {0} Reading custom Ramachandran table from scoring/score_functions/rama/flat/sym_G_rama.dat.
+basic.io.database: {0} Database file opened: scoring/score_functions/rama/flat/sym_P_rama.dat
+core.scoring.ramachandran: {0} Reading custom Ramachandran table from scoring/score_functions/rama/flat/sym_P_rama.dat.
+basic.io.database: {0} Database file opened: scoring/score_functions/rama/flat/avg_L_rama_str.dat
+core.scoring.ramachandran: {0} Reading custom Ramachandran table from scoring/score_functions/rama/flat/avg_L_rama_str.dat.
+basic.io.database: {0} Database file opened: scoring/score_functions/rama/flat/sym_all_rama_str.dat
+core.scoring.ramachandran: {0} Reading custom Ramachandran table from scoring/score_functions/rama/flat/sym_all_rama_str.dat.
+basic.io.database: {0} Database file opened: scoring/score_functions/rama/flat/sym_G_rama_str.dat
+core.scoring.ramachandran: {0} Reading custom Ramachandran table from scoring/score_functions/rama/flat/sym_G_rama_str.dat.
+basic.io.database: {0} Database file opened: scoring/score_functions/rama/flat/sym_P_rama_str.dat
+core.scoring.ramachandran: {0} Reading custom Ramachandran table from scoring/score_functions/rama/flat/sym_P_rama_str.dat.
+core.scoring.ScoreFunctionFactory: {0} SCOREFUNCTION: ref2015
+core.scoring.ScoreFunctionFactory: {0} SCOREFUNCTION: ref2015
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Defined filter named "Buried Unsat [[-]]" of type BuriedUnsatHbonds
+protocols.rosetta_scripts.ParsedProtocol: {0} ParsedProtocol mover with the following settings
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Generating XML Schema for rosetta_scripts...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Initializing schema validator...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Validating input script...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Parsed script:
+<ROSETTASCRIPTS>
+	<FILTERS>
+		<PackStat name="PackStat Score [[+]]" threshold="0"/>
+	</FILTERS>
+	<PROTOCOLS/>
+</ROSETTASCRIPTS>
+core.scoring.ScoreFunctionFactory: {0} SCOREFUNCTION: ref2015
+protocols.filters.PackStatFilter: {0} Structures with packstat score 0 will be filtred.
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Defined filter named "PackStat Score [[+]]" of type PackStat
+protocols.rosetta_scripts.ParsedProtocol: {0} ParsedProtocol mover with the following settings
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Generating XML Schema for rosetta_scripts...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Initializing schema validator...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Validating input script...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Parsed script:
+<ROSETTASCRIPTS>
+	<FILTERS>
+		<PreProline name="Pre-Proline Potential [[-]]" use_statistical_potential="true"/>
+	</FILTERS>
+	<PROTOCOLS/>
+</ROSETTASCRIPTS>
+core.scoring.ScoreFunctionFactory: {0} SCOREFUNCTION: ref2015
+basic.io.database: {0} Database file opened: protocol_data/denovo_design/preproline_normalized.gz
+protocols.denovo_design.PreProlineFilter: {0} X start: -180 delta: 11.25
+protocols.denovo_design.PreProlineFilter: {0} Y start: -180 delta: 11.25
+protocols.denovo_design.PreProlineFilter: {0} Spline for preproline residues has been trained from protocol_data/denovo_design/preproline_normalized.gz.
+core.select.residue_selector.util: {0} [ WARNING ] Selector name is empty!
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Defined filter named "Pre-Proline Potential [[-]]" of type PreProline
+protocols.rosetta_scripts.ParsedProtocol: {0} ParsedProtocol mover with the following settings
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Generating XML Schema for rosetta_scripts...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Initializing schema validator...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Validating input script...
+protocols.rosetta_scripts.RosettaScriptsParser: {0} ...done
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Parsed script:
+<ROSETTASCRIPTS>
+	<FILTERS>
+		<ExposedHydrophobics name="Exposed Hydrophobic Residue SASA [[-]]" sasa_cutoff="20" threshold="-1"/>
+	</FILTERS>
+	<PROTOCOLS/>
+</ROSETTASCRIPTS>
+core.scoring.ScoreFunctionFactory: {0} SCOREFUNCTION: ref2015
+protocols.rosetta_scripts.RosettaScriptsParser: {0} Defined filter named "Exposed Hydrophobic Residue SASA [[-]]" of type ExposedHydrophobics
+protocols.rosetta_scripts.ParsedProtocol: {0} ParsedProtocol mover with the following settings
+protocols.simple_filters.BuriedUnsatHbondFilter: {0} /////////////////////////////////////////////////////////////////////////////////////////
+protocols.simple_filters.BuriedUnsatHbondFilter: {0} 
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}     USING DEFAULT BEHAVIOR: filter will report total number of heavy-atom donor/acceptor buried unsats
+protocols.simple_filters.BuriedUnsatHbondFilter: {0} 
+protocols.simple_filters.BuriedUnsatHbondFilter: {0} /////////////////////////////////////////////////////////////////////////////////////////
+protocols.simple_filters.BuriedUnsatHbondFilter: {0} 
+basic.io.database: {0} Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBPoly1D.csv
+basic.io.database: {0} Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBFadeIntervals.csv
+basic.io.database: {0} Database file opened: scoring/score_functions/hbonds/sp2_elec_params/HBEval.csv
+protocols.vardist_solaccess: {0} VarSolDistSasaCalculator::recompute
+protocols.vardist_solaccess: {0} VarSolDistSasaCalculator::lookup
+protocols.vardist_solaccess: {0} VarSolDistSasaCalculator::lookup
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}   buried unsats in input pose: 
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}   all_heavy_atom_unsats = 121
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}   bb_heavy_atom_unsats = 93
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}   sc_heavy_atom_unsats = 28
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}   countable_nonheavy_unsats = 58
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 2: GLU  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 2: GLU  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 7: THR  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 7: THR  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 13: ASN  OD1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 14: HIS  ND1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 64: PRO  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 73: VAL  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 73: VAL  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 81: GLN  OE1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 110: GLY  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 128: LEU  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 128: LEU  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 131: ILE  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 132: MET  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 144: ALA  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 148: TRP  NE1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 148: TRP  HE1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 159: LEU  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 159: LEU  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 163: TYR  OH 
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 178: ASP  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 178: ASP  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 180: GLY  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 180: GLY  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 181: ASP  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 202: LEU  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 202: LEU  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 205: ASP  OD2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 216: LEU  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 216: LEU  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 217: TYR  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 219: HIS  ND1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 221: HIS  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 221: HIS  ND1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 221: HIS  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 237: SER  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 237: SER  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 237: SER  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 241: CYS  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 245: HIS  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 245: HIS  ND1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 245: HIS  NE2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 245: HIS  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 245: HIS  HE2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 247: LEU  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 249: ASP  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 249: ASP  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 253: ARG  NE 
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 253: ARG  HE 
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 259: TYR  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 270: ASN  ND2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 270: ASN 1HD2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 270: ASN 2HD2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 273: VAL  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 277: MET  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 277: MET  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 312: MET  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 312: MET  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 323: VAL  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 331: LEU  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 338: ILE  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 340: MET  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 348: ASP  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 348: ASP  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 353: HIS  ND1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 358: HIS  NE2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 358: HIS  HE2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 362: ASP  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 377: ASN  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 377: ASN  ND2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 377: ASN  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 377: ASN 1HD2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 377: ASN 2HD2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 381: HIS  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 384: VAL  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 385: GLY  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 385: GLY  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 388: MET  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 388: MET  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 392: ALA  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 413: GLU  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 413: GLU  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 427: VAL  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 429: THR  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 429: THR  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 432: PHE  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 432: PHE  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 453: TRP  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 453: TRP  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 467: VAL  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 469: GLU  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 471: VAL  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 473: HIS  ND1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 475: GLU  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 475: GLU  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 478: CYS  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 478: CYS  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 479: ASP  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 479: ASP  OD1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 479: ASP  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 485: HIS  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 485: HIS  ND1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 485: HIS  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 487: SER  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 487: SER  OG 
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 489: ASP  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 489: ASP  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 491: SER  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 492: PHE  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 492: PHE  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 494: ARG  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 494: ARG  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 501: TYR  OH 
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 506: GLN  OE1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 520: HIS  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 520: HIS  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 521: LYS  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 524: ILE  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 536: ASN  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 541: GLY  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 547: THR  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 547: THR  OG1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 547: THR  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 556: ALA  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 558: ASN  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 558: ASN  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 561: VAL  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 561: VAL  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 571: LEU  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 571: LEU  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 579: ASN  OD1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 591: SER  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 591: SER  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 593: TYR  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 593: TYR  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 602: ILE  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 604: LEU  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 604: LEU  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 665: VAL  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 665: VAL  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 666: THR  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 684: ILE  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 692: ASN  OD1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 698: ASN  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 698: ASN  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 698: ASN  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 699: ASP  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 699: ASP  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 704: PHE  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 704: PHE  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 760: PHE  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 761: ALA  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 763: VAL  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 766: TRP  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 766: TRP  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 766: TRP  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 777: ASP  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 777: ASP  OD1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 777: ASP  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 814: VAL  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 832: ALA  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 834: TYR  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 834: TYR  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 844: GLY  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 844: GLY  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 852: ASN  OD1
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 856: SER  OG 
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 864: TYR  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 864: TYR  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 867: ARG  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 867: ARG 1HH2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 899: PHE  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 903: PHE  O  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 906: GLN 1HE2
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 908: TYR  OH 
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 913: THR  N  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied Hpol polar atom at residue 913: THR  H  
+protocols.simple_filters.BuriedUnsatHbondFilter: {0}       Unsatisfied HEAVY polar atom at residue 918: TYR  O  
+protocols.evaluation.ChiWellRmsdEvaluatorCreator: {0} Evaluation Creator active ... 
+protocols.filters.PackStatFilter: {0} repeat 1: packscore: 0.594914
+protocols.denovo_design.PreProlineFilter: {0} Phi = -90.23 Psi = 137.598 spline score = -0.359258
+protocols.denovo_design.PreProlineFilter: {0} Phi = -68.7026 Psi = 123.852 spline score = 1.20565
+protocols.denovo_design.PreProlineFilter: {0} Phi = -165.589 Psi = 93.4784 spline score = -0.742328
+protocols.denovo_design.PreProlineFilter: {0} Phi = -92.6502 Psi = -43.057 spline score = -0.817759
+protocols.denovo_design.PreProlineFilter: {0} Phi = -60.0157 Psi = -49.9546 spline score = 2.64549
+protocols.denovo_design.PreProlineFilter: {0} Phi = -45.9999 Psi = -57.9205 spline score = 3.79164
+protocols.denovo_design.PreProlineFilter: {0} Phi = -129.791 Psi = 70.6496 spline score = -0.713301
+protocols.denovo_design.PreProlineFilter: {0} Phi = -66.8258 Psi = 144.738 spline score = 0.412718
+protocols.denovo_design.PreProlineFilter: {0} Phi = -91.0957 Psi = 131.768 spline score = 0.0306884
+protocols.denovo_design.PreProlineFilter: {0} Phi = -52.964 Psi = 128.017 spline score = 3.17761
+protocols.denovo_design.PreProlineFilter: {0} Phi = -122.911 Psi = 138.705 spline score = -0.110383
+protocols.denovo_design.PreProlineFilter: {0} Phi = -102.266 Psi = 151.82 spline score = -0.89118
+protocols.denovo_design.PreProlineFilter: {0} Phi = -65.0044 Psi = 124.568 spline score = 1.77658
+protocols.denovo_design.PreProlineFilter: {0} Phi = -157.775 Psi = 137.086 spline score = -0.809575
+protocols.denovo_design.PreProlineFilter: {0} Phi = -81.0205 Psi = 155.409 spline score = -0.856335
+protocols.denovo_design.PreProlineFilter: {0} Phi = -71.1371 Psi = 149.084 spline score = -0.14429
+protocols.denovo_design.PreProlineFilter: {0} Phi = -59.2871 Psi = 142.457 spline score = 0.565356
+protocols.denovo_design.PreProlineFilter: {0} Phi = -53.2856 Psi = -50.9103 spline score = 3.38538
+protocols.denovo_design.PreProlineFilter: {0} Phi = -111.856 Psi = 121.178 spline score = 0.220572
+protocols.denovo_design.PreProlineFilter: {0} Phi = -72.1659 Psi = 117.934 spline score = 0.418783
+protocols.denovo_design.PreProlineFilter: {0} Phi = -133.992 Psi = 119.899 spline score = 0.404696
+protocols.denovo_design.PreProlineFilter: {0} Phi = -48.3129 Psi = -45.4609 spline score = 4.86382
+protocols.denovo_design.PreProlineFilter: {0} Phi = -84.9774 Psi = -171.92 spline score = -2.28083
+protocols.denovo_design.PreProlineFilter: {0} Phi = -134.431 Psi = 153.709 spline score = -0.584272
+protocols.denovo_design.PreProlineFilter: {0} Phi = -37.4995 Psi = -60.132 spline score = 4.46659
+protocols.denovo_design.PreProlineFilter: {0} Phi = -41.9901 Psi = -58.0608 spline score = 4.23309
+protocols.denovo_design.PreProlineFilter: {0} Phi = -140.2 Psi = 142.783 spline score = -0.243256
+protocols.denovo_design.PreProlineFilter: {0} Phi = -112.384 Psi = 152.266 spline score = -0.824107
+protocols.denovo_design.PreProlineFilter: {0} Phi = -60.8098 Psi = 136.525 spreading job info
+opened /wynton/home/rotation/kevinnie/proteindesign/project/01_designs/3047106.json
+PyRosetta-4 2021 [Rosetta PyRosetta4.conda.linux.cxx11thread.serialization.CentOS.python37.Release 2021.13+release.b0f375c4dc0c8a7f8cc8e2ac6fa3b71fcdcc2402 2021-04-02T16:15:01] retrieved from: http://www.pyrosetta.org
+(C) Copyright Rosetta Commons Member Institutions. Created in JHU by Sergey Lyskov and PyRosetta Team.
+No inputs found; using workspace input pdb as sole input.
+
+-------------------------------
+  resnum     Type  TRUE/FALSE 
+-------------------------------
+ DEFAULT      BB      TRUE
+ DEFAULT      SC      TRUE
+ DEFAULT      NU     FALSE
+ DEFAULT  BRANCH     FALSE
+-------------------------------
+ jumpnum     Type  TRUE/FALSE 
+-------------------------------
+ DEFAULT     JUMP    FALSE
+-------------------------------
+  resnum  atomnum     Type  TRUE/FALSE 
+-------------------------------
+ DEFAULT               PHI    FALSE
+ DEFAULT             THETA    FALSE
+ DEFAULT                 D    FALSE
+ DEFAULT               RB1    FALSE
+ DEFAULT               RB2    FALSE
+ DEFAULT               RB3    FALSE
+ DEFAULT               RB4    FALSE
+ DEFAULT               RB5    FALSE
+ DEFAULT               RB6    FALSE
+-------------------------------
+
+
+<pyrosetta.rosetta.core.pack.task.TaskFactory object at 0x2b7f79b0b470>
+PyRosetta-4 2021 [Rosetta PyRosetta4.conda.linux.cxx11thread.serialization.CentOS.python37.Release 2021.13+release.b0f375c4dc0c8a7f8cc8e2ac6fa3b71fcdcc2402 2021-04-02T16:15:01] retrieved from: http://www.pyrosetta.org
+(C) Copyright Rosetta Commons Member Institutions. Created in JHU by Sergey Lyskov and PyRosetta Team.
+line score = 1.01293
+protocols.denovo_design.PreProlineFilter: {0} Phi = -73.8681 Psi = 128.068 spline score = 0.781739
+protocols.denovo_design.PreProlineFilter: {0} Phi = -74.2933 Psi = 155.2 spline score = -0.71704
+protocols.denovo_design.PreProlineFilter: {0} Phi = 127.428 Psi = -32.0342 spline score = -1.2875
+protocols.denovo_design.PreProlineFilter: {0} Phi = -74.9935 Psi = 156.536 spline score = -0.848082
+protocols.denovo_design.PreProlineFilter: {0} Phi = -151.383 Psi = 48.4349 spline score = -1.48032
+protocols.denovo_design.PreProlineFilter: {0} Phi = -72.0986 Psi = 164.994 spline score = -1.80884
+protocols.denovo_design.PreProlineFilter: {0} Phi = 0 Psi = 107.167 spline score = 3.95227
+protocols.denovo_design.PreProlineFilter: {0} Phi = -61.6586 Psi = 135.225 spline score = 1.16284
+protocols.denovo_design.PreProlineFilter: {0} Phi = -160.862 Psi = 158.982 spline score = -1.09865
+protocols.denovo_design.PreProlineFilter: {0} Phi = -104.551 Psi = 136.356 spline score = -0.28556
+protocols.denovo_design.PreProlineFilter: {0} Phi = -76.0067 Psi = 164.06 spline score = -1.80752
+protocols.denovo_design.PreProlineFilter: {0} Phi = -152.916 Psi = 133.998 spline score = -0.568949
+protocols.denovo_design.PreProlineFilter: {0} Phi = -72.9757 Psi = 127.134 spline score = 0.825574
+protocols.denovo_design.PreProlineFilter: {0} Phi = -78.362 Psi = 148.961 spline score = -0.554114
+protocols.denovo_design.PreProlineFilter: {0} Phi = -68.9164 Psi = 153.412 spline score = -0.402781
+protocols.DsspMover: {0} LHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHHHHHHHHHHHHHLLLLLLLLHHHHHHHHHHHLLLLLLLLHHHHHHHHHHHHHHHHHHHLLLEEELLEEEEEELLLLLHHHHHHLLLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLLLLLHHHHHHHHHLELLLLLLLELLLHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHLLLLLLLLLLEEHHHLLLLLLLLLHHHHHHHLLLLLLLLLLLLHHHHHLLLLHHHHHHHHHHHHHHHLLLLLLLHHHHHLLLLLLLLLLLLLLLLEEEELLLLLEEEELLLLLLHHHHHHHHHHHHHHHHHHHLLLLLHHHLLLLLHHHHHHHHHHHHHHHLLHHHHHHHLLLLLLLLLLHHHHHHHHHHHHHHHLLLHHHHHHHHHHHHHHHHLLLLHHHHHHHHHHHHHHHHLEELLLLLLLLLLHHHHLHHHHLLLLLHHHHHHHHHHHHHHHHHHHHLLLLLLHHHLLLLLLLHHHHHHHHHHHHLLLLLHHHHHHHHLLLLLLLLHHHHHHHHHHHHHHHHHLLLLLLLLLLLLLLLLLLLEEEEELHHHHLHHHLLLLLHHHHHHHHHHHHHHHHHHHHHLLLLLLLLLHHHEEEEEEELLLEEEEEEELLLLLLLELLHHHHHHHHHHHHHHHHHHLLLLLLLEEELLLLLLLLLLLLLLLLHHHHHHHHHHHHHHHHHHHHHHHHHHHLLLHHHHHLLLLLLLHHHLEEEEELLLLLLHHHHHHHLLLLEEEELLLLLLLHHHLLLLEEEEEEEEEEHHHHHHLLLLLLLLLLLLLLLLLLLLLLEEEEEELLLLLLLLLLELLLEEELLLLLLLLLLLLLLLLLLEELLLLLLLLLLELLEELLEEELLELLLLLLLLLEEEEEEEEEELL
+protocols.denovo_design.ExposedHydrophobicsFilter: {0} ExposedHydrophobics value=7991.4
